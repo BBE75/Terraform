@@ -46,6 +46,18 @@ os_profile_windows_config {
     enable_automatic_upgrades = "true"
     provision_vm_agent ="true"
 }
+# Copy Powershell script
+provisioner "file" {
+    source      = "disks.ps1"
+    destination = "D:"    
+  }
+
+# Run script to format new disks
+provisioner "remote-exec" {
+    inline = [         
+        "powershell.exe -ExecutionPolicy Bypass -File D:disks.ps1"
+    ]
+  }
 
 boot_diagnostics {
         enabled = true
