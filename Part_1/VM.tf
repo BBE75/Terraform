@@ -49,13 +49,13 @@ os_profile_windows_config {
 # Copy Powershell script
 provisioner "file" {
     source      = "disks.ps1"
-    destination = "D:"    
+    destination = "D:/terraform/disks.ps1"    
   }
 
 # Run script to format new disks
 provisioner "remote-exec" {
     inline = [         
-        "powershell.exe -ExecutionPolicy Bypass -File D:disks.ps1"
+        "powershell.exe -ExecutionPolicy Bypass -File D:\\terraform\\disks.ps1"
     ]
   }
 
