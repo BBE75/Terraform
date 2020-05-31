@@ -49,7 +49,14 @@ os_profile_windows_config {
 # Copy Powershell script
 provisioner "file" {
     source      = "disks.ps1"
-    destination = "D:/terraform/disks.ps1"    
+    destination = "D:/terraform/disks.ps1"
+
+    connection {
+      type     = "winrm"
+      user     = var.admin_name
+      password = var.admin_pass
+      host     = azurerm_public_ip.publicIp1.ip_address
+  }    
   }
 
 # Run script to format new disks
