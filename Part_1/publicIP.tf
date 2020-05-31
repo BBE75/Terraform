@@ -5,6 +5,7 @@ resource "azurerm_public_ip" "publicIp1" {
     resource_group_name          = azurerm_resource_group.RG1.name
 
     allocation_method            = "Dynamic"
+    domain_name_label            = "esgi-ben-part1-vmaz"
 
     tags = {
         environment =  var.tag
