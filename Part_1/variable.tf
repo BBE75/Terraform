@@ -1,3 +1,5 @@
+
+
 variable "rgName" {
     type      = string
   description = "Ressource group name"
@@ -26,4 +28,9 @@ variable "admin_pass" {
 variable "tag" {
     type      = string
   description = "Tag to use for the infrastructure"
+}
+
+variable "client_secret" {
+    type      = string
+  description = "Password of app on Azure"
 }
