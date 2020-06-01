@@ -15,7 +15,7 @@ storage_image_reference {
 
 
  storage_os_disk {
-   name               = "Os"
+   name               = "WIN2K12"
    caching            = "ReadWrite"
    create_option      = "FromImage"
    managed_disk_type  = "Standard_LRS"
