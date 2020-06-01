@@ -1,0 +1,294 @@
+digraph {
+        compound = "true"
+        newrank = "true"
+        subgraph "root" {
+                "[root] azurerm_application_gateway.application-gateway" [label = "azurerm_application_gateway.application-gateway", shape = "box"]
+                "[root] azurerm_lb.lb4" [label = "azurerm_lb.lb4", shape = "box"]
+                "[root] azurerm_lb.lb5" [label = "azurerm_lb.lb5", shape = "box"]
+                "[root] azurerm_lb_backend_address_pool.lb4" [label = "azurerm_lb_backend_address_pool.lb4", shape = "box"]
+                "[root] azurerm_lb_backend_address_pool.lb5" [label = "azurerm_lb_backend_address_pool.lb5", shape = "box"]
+                "[root] azurerm_lb_probe.lb4" [label = "azurerm_lb_probe.lb4", shape = "box"]
+                "[root] azurerm_lb_probe.lb5" [label = "azurerm_lb_probe.lb5", shape = "box"]
+                "[root] azurerm_lb_rule.lb4" [label = "azurerm_lb_rule.lb4", shape = "box"]
+                "[root] azurerm_lb_rule.lb5" [label = "azurerm_lb_rule.lb5", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.adds6" [label = "azurerm_linux_virtual_machine.adds6", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.adds62" [label = "azurerm_linux_virtual_machine.adds62", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.jumpbox" [label = "azurerm_linux_virtual_machine.jumpbox", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5" [label = "azurerm_linux_virtual_machine.sql-linux-vm5", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5-2" [label = "azurerm_linux_virtual_machine.sql-linux-vm5-2", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3" [label = "azurerm_linux_virtual_machine.web-linux-vm3", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-2" [label = "azurerm_linux_virtual_machine.web-linux-vm3-2", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-3" [label = "azurerm_linux_virtual_machine.web-linux-vm3-3", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4" [label = "azurerm_linux_virtual_machine.web-linux-vm4", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-2" [label = "azurerm_linux_virtual_machine.web-linux-vm4-2", shape = "box"]
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-3" [label = "azurerm_linux_virtual_machine.web-linux-vm4-3", shape = "box"]
+                "[root] azurerm_network_interface.nic2" [label = "azurerm_network_interface.nic2", shape = "box"]
+                "[root] azurerm_network_interface.nic3" [label = "azurerm_network_interface.nic3", shape = "box"]
+                "[root] azurerm_network_interface.nic3-2" [label = "azurerm_network_interface.nic3-2", shape = "box"]
+                "[root] azurerm_network_interface.nic3-3" [label = "azurerm_network_interface.nic3-3", shape = "box"]
+                "[root] azurerm_network_interface.nic4" [label = "azurerm_network_interface.nic4", shape = "box"]
+                "[root] azurerm_network_interface.nic4-2" [label = "azurerm_network_interface.nic4-2", shape = "box"]
+                "[root] azurerm_network_interface.nic4-3" [label = "azurerm_network_interface.nic4-3", shape = "box"]
+                "[root] azurerm_network_interface.nic5" [label = "azurerm_network_interface.nic5", shape = "box"]
+                "[root] azurerm_network_interface.nic5-2" [label = "azurerm_network_interface.nic5-2", shape = "box"]
+                "[root] azurerm_network_interface.nic6" [label = "azurerm_network_interface.nic6", shape = "box"]
+                "[root] azurerm_network_interface.nic6-2" [label = "azurerm_network_interface.nic6-2", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link2" [label = "azurerm_network_interface_security_group_association.link2", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link3" [label = "azurerm_network_interface_security_group_association.link3", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link3-2" [label = "azurerm_network_interface_security_group_association.link3-2", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link3-3" [label = "azurerm_network_interface_security_group_association.link3-3", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link4" [label = "azurerm_network_interface_security_group_association.link4", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link4-2" [label = "azurerm_network_interface_security_group_association.link4-2", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link4-3" [label = "azurerm_network_interface_security_group_association.link4-3", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link5" [label = "azurerm_network_interface_security_group_association.link5", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link5-2" [label = "azurerm_network_interface_security_group_association.link5-2", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link6" [label = "azurerm_network_interface_security_group_association.link6", shape = "box"]
+                "[root] azurerm_network_interface_security_group_association.link6-2" [label = "azurerm_network_interface_security_group_association.link6-2", shape = "box"]
+                "[root] azurerm_network_security_group.nsg1" [label = "azurerm_network_security_group.nsg1", shape = "box"]
+                "[root] azurerm_network_security_group.nsg2" [label = "azurerm_network_security_group.nsg2", shape = "box"]
+                "[root] azurerm_network_security_group.nsg3" [label = "azurerm_network_security_group.nsg3", shape = "box"]
+                "[root] azurerm_network_security_group.nsg4" [label = "azurerm_network_security_group.nsg4", shape = "box"]
+                "[root] azurerm_network_security_group.nsg5" [label = "azurerm_network_security_group.nsg5", shape = "box"]
+                "[root] azurerm_network_security_group.nsg6" [label = "azurerm_network_security_group.nsg6", shape = "box"]
+                "[root] azurerm_public_ip.publicIp1" [label = "azurerm_public_ip.publicIp1", shape = "box"]
+                "[root] azurerm_public_ip.publicIp2" [label = "azurerm_public_ip.publicIp2", shape = "box"]
+                "[root] azurerm_resource_group.RG1" [label = "azurerm_resource_group.RG1", shape = "box"]
+                "[root] azurerm_storage_account.storageAccount1" [label = "azurerm_storage_account.storageAccount1", shape = "box"]
+                "[root] azurerm_subnet.subnet1" [label = "azurerm_subnet.subnet1", shape = "box"]
+                "[root] azurerm_subnet.subnet2" [label = "azurerm_subnet.subnet2", shape = "box"]
+                "[root] azurerm_subnet.subnet3" [label = "azurerm_subnet.subnet3", shape = "box"]
+                "[root] azurerm_subnet.subnet4" [label = "azurerm_subnet.subnet4", shape = "box"]
+                "[root] azurerm_subnet.subnet5" [label = "azurerm_subnet.subnet5", shape = "box"]
+                "[root] azurerm_subnet.subnet6" [label = "azurerm_subnet.subnet6", shape = "box"]
+                "[root] azurerm_virtual_network.virtualNetwork1" [label = "azurerm_virtual_network.virtualNetwork1", shape = "box"]
+                "[root] data.template_file.linux-mysql" [label = "data.template_file.linux-mysql", shape = "box"]
+                "[root] data.template_file.linux-vm-cloud-init" [label = "data.template_file.linux-vm-cloud-init", shape = "box"]
+                "[root] provider.azurerm" [label = "provider.azurerm", shape = "diamond"]
+                "[root] provider.template" [label = "provider.template", shape = "diamond"]
+                "[root] var.admin_name" [label = "var.admin_name", shape = "note"]
+                "[root] var.admin_pass" [label = "var.admin_pass", shape = "note"]
+                "[root] var.business-linux-vm-size" [label = "var.business-linux-vm-size", shape = "note"]
+                "[root] var.client_secret" [label = "var.client_secret", shape = "note"]
+                "[root] var.hostname" [label = "var.hostname", shape = "note"]
+                "[root] var.region" [label = "var.region", shape = "note"]
+                "[root] var.rgName" [label = "var.rgName", shape = "note"]
+                "[root] var.tag" [label = "var.tag", shape = "note"]
+                "[root] var.web-linux-delete-data-disks-on-termination" [label = "var.web-linux-delete-data-disks-on-termination", shape = "note"]
+                "[root] var.web-linux-delete-os-disk-on-termination" [label = "var.web-linux-delete-os-disk-on-termination", shape = "note"]
+                "[root] var.web-linux-license-type" [label = "var.web-linux-license-type", shape = "note"]
+                "[root] var.web-linux-vm-image" [label = "var.web-linux-vm-image", shape = "note"]
+                "[root] var.web-linux-vm-size" [label = "var.web-linux-vm-size", shape = "note"]
+                "[root] azurerm_application_gateway.application-gateway" -> "[root] azurerm_network_interface.nic3"
+                "[root] azurerm_application_gateway.application-gateway" -> "[root] azurerm_network_interface.nic3-2"
+                "[root] azurerm_application_gateway.application-gateway" -> "[root] azurerm_network_interface.nic3-3"
+                "[root] azurerm_application_gateway.application-gateway" -> "[root] azurerm_public_ip.publicIp1"
+                "[root] azurerm_application_gateway.application-gateway" -> "[root] azurerm_subnet.subnet1"
+                "[root] azurerm_lb.lb4" -> "[root] azurerm_subnet.subnet4"
+                "[root] azurerm_lb.lb5" -> "[root] azurerm_subnet.subnet4"
+                "[root] azurerm_lb_backend_address_pool.lb4" -> "[root] azurerm_lb.lb4"
+                "[root] azurerm_lb_backend_address_pool.lb5" -> "[root] azurerm_lb.lb5"
+                "[root] azurerm_lb_probe.lb4" -> "[root] azurerm_lb.lb4"
+                "[root] azurerm_lb_probe.lb5" -> "[root] azurerm_lb.lb5"
+                "[root] azurerm_lb_rule.lb4" -> "[root] azurerm_lb.lb4"
+                "[root] azurerm_lb_rule.lb5" -> "[root] azurerm_lb.lb5"
+                "[root] azurerm_linux_virtual_machine.adds6" -> "[root] azurerm_network_interface.nic5"
+                "[root] azurerm_linux_virtual_machine.adds6" -> "[root] azurerm_network_interface.nic6"
+                "[root] azurerm_linux_virtual_machine.adds6" -> "[root] data.template_file.linux-vm-cloud-init"
+                "[root] azurerm_linux_virtual_machine.adds6" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.adds6" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.adds6" -> "[root] var.business-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.adds6" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_linux_virtual_machine.adds62" -> "[root] azurerm_network_interface.nic6-2"
+                "[root] azurerm_linux_virtual_machine.adds62" -> "[root] data.template_file.linux-vm-cloud-init"
+                "[root] azurerm_linux_virtual_machine.adds62" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.adds62" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.adds62" -> "[root] var.business-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.adds62" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_linux_virtual_machine.jumpbox" -> "[root] azurerm_network_interface.nic2"
+                "[root] azurerm_linux_virtual_machine.jumpbox" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.jumpbox" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.jumpbox" -> "[root] var.hostname"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5" -> "[root] azurerm_network_interface.nic5"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5" -> "[root] data.template_file.linux-mysql"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5" -> "[root] var.business-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5-2" -> "[root] azurerm_network_interface.nic5-2"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5-2" -> "[root] data.template_file.linux-mysql"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5-2" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5-2" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5-2" -> "[root] var.business-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.sql-linux-vm5-2" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3" -> "[root] azurerm_network_interface.nic3"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3" -> "[root] data.template_file.linux-vm-cloud-init"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3" -> "[root] var.web-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-2" -> "[root] azurerm_network_interface.nic3-2"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-2" -> "[root] data.template_file.linux-vm-cloud-init"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-2" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-2" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-2" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-2" -> "[root] var.web-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-3" -> "[root] azurerm_network_interface.nic3-3"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-3" -> "[root] data.template_file.linux-vm-cloud-init"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-3" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-3" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-3" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm3-3" -> "[root] var.web-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4" -> "[root] azurerm_network_interface.nic4"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4" -> "[root] data.template_file.linux-vm-cloud-init"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4" -> "[root] var.business-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-2" -> "[root] azurerm_network_interface.nic4-2"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-2" -> "[root] data.template_file.linux-vm-cloud-init"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-2" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-2" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-2" -> "[root] var.business-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-2" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-3" -> "[root] azurerm_network_interface.nic4-3"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-3" -> "[root] data.template_file.linux-vm-cloud-init"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-3" -> "[root] var.admin_name"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-3" -> "[root] var.admin_pass"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-3" -> "[root] var.business-linux-vm-size"
+                "[root] azurerm_linux_virtual_machine.web-linux-vm4-3" -> "[root] var.web-linux-vm-image"
+                "[root] azurerm_network_interface.nic2" -> "[root] azurerm_public_ip.publicIp2"
+                "[root] azurerm_network_interface.nic2" -> "[root] azurerm_subnet.subnet2"
+                "[root] azurerm_network_interface.nic3" -> "[root] azurerm_subnet.subnet3"
+                "[root] azurerm_network_interface.nic3-2" -> "[root] azurerm_subnet.subnet3"
+                "[root] azurerm_network_interface.nic3-3" -> "[root] azurerm_subnet.subnet3"
+                "[root] azurerm_network_interface.nic4" -> "[root] azurerm_subnet.subnet4"
+                "[root] azurerm_network_interface.nic4-2" -> "[root] azurerm_subnet.subnet4"
+                "[root] azurerm_network_interface.nic4-3" -> "[root] azurerm_subnet.subnet4"
+                "[root] azurerm_network_interface.nic5" -> "[root] azurerm_subnet.subnet5"
+                "[root] azurerm_network_interface.nic5-2" -> "[root] azurerm_subnet.subnet5"
+                "[root] azurerm_network_interface.nic6" -> "[root] azurerm_subnet.subnet6"
+                "[root] azurerm_network_interface.nic6-2" -> "[root] azurerm_subnet.subnet6"
+                "[root] azurerm_network_interface_security_group_association.link2" -> "[root] azurerm_network_interface.nic2"
+                "[root] azurerm_network_interface_security_group_association.link2" -> "[root] azurerm_network_security_group.nsg2"
+                "[root] azurerm_network_interface_security_group_association.link3" -> "[root] azurerm_network_interface.nic3"
+                "[root] azurerm_network_interface_security_group_association.link3" -> "[root] azurerm_network_security_group.nsg3"
+                "[root] azurerm_network_interface_security_group_association.link3-2" -> "[root] azurerm_network_interface.nic3-2"
+                "[root] azurerm_network_interface_security_group_association.link3-2" -> "[root] azurerm_network_security_group.nsg3"
+                "[root] azurerm_network_interface_security_group_association.link3-3" -> "[root] azurerm_network_interface.nic3-3"
+                "[root] azurerm_network_interface_security_group_association.link3-3" -> "[root] azurerm_network_security_group.nsg3"
+                "[root] azurerm_network_interface_security_group_association.link4" -> "[root] azurerm_network_interface.nic4"
+                "[root] azurerm_network_interface_security_group_association.link4" -> "[root] azurerm_network_security_group.nsg4"
+                "[root] azurerm_network_interface_security_group_association.link4-2" -> "[root] azurerm_network_interface.nic4-2"
+                "[root] azurerm_network_interface_security_group_association.link4-2" -> "[root] azurerm_network_security_group.nsg4"
+                "[root] azurerm_network_interface_security_group_association.link4-3" -> "[root] azurerm_network_interface.nic4-3"
+                "[root] azurerm_network_interface_security_group_association.link4-3" -> "[root] azurerm_network_security_group.nsg4"
+                "[root] azurerm_network_interface_security_group_association.link5" -> "[root] azurerm_network_interface.nic5"
+                "[root] azurerm_network_interface_security_group_association.link5" -> "[root] azurerm_network_security_group.nsg5"
+                "[root] azurerm_network_interface_security_group_association.link5-2" -> "[root] azurerm_network_interface.nic5-2"
+                "[root] azurerm_network_interface_security_group_association.link5-2" -> "[root] azurerm_network_security_group.nsg5"
+                "[root] azurerm_network_interface_security_group_association.link6" -> "[root] azurerm_network_interface.nic6"
+                "[root] azurerm_network_interface_security_group_association.link6" -> "[root] azurerm_network_security_group.nsg6"
+                "[root] azurerm_network_interface_security_group_association.link6-2" -> "[root] azurerm_network_interface.nic6-2"
+                "[root] azurerm_network_interface_security_group_association.link6-2" -> "[root] azurerm_network_security_group.nsg6"
+                "[root] azurerm_network_security_group.nsg1" -> "[root] azurerm_resource_group.RG1"
+                "[root] azurerm_network_security_group.nsg2" -> "[root] azurerm_resource_group.RG1"
+                "[root] azurerm_network_security_group.nsg3" -> "[root] azurerm_subnet.subnet1"
+                "[root] azurerm_network_security_group.nsg3" -> "[root] azurerm_subnet.subnet2"
+                "[root] azurerm_network_security_group.nsg4" -> "[root] azurerm_subnet.subnet2"
+                "[root] azurerm_network_security_group.nsg4" -> "[root] azurerm_subnet.subnet3"
+                "[root] azurerm_network_security_group.nsg5" -> "[root] azurerm_subnet.subnet2"
+                "[root] azurerm_network_security_group.nsg5" -> "[root] azurerm_subnet.subnet4"
+                "[root] azurerm_network_security_group.nsg6" -> "[root] azurerm_subnet.subnet1"
+                "[root] azurerm_network_security_group.nsg6" -> "[root] azurerm_subnet.subnet2"
+                "[root] azurerm_network_security_group.nsg6" -> "[root] azurerm_subnet.subnet3"
+                "[root] azurerm_network_security_group.nsg6" -> "[root] azurerm_subnet.subnet4"
+                "[root] azurerm_network_security_group.nsg6" -> "[root] azurerm_subnet.subnet5"
+                "[root] azurerm_public_ip.publicIp1" -> "[root] azurerm_resource_group.RG1"
+                "[root] azurerm_public_ip.publicIp2" -> "[root] azurerm_resource_group.RG1"
+                "[root] azurerm_resource_group.RG1" -> "[root] provider.azurerm"
+                "[root] azurerm_resource_group.RG1" -> "[root] var.region"
+                "[root] azurerm_resource_group.RG1" -> "[root] var.rgName"
+                "[root] azurerm_resource_group.RG1" -> "[root] var.tag"
+                "[root] azurerm_storage_account.storageAccount1" -> "[root] azurerm_resource_group.RG1"
+                "[root] azurerm_subnet.subnet1" -> "[root] azurerm_virtual_network.virtualNetwork1"
+                "[root] azurerm_subnet.subnet2" -> "[root] azurerm_virtual_network.virtualNetwork1"
+                "[root] azurerm_subnet.subnet3" -> "[root] azurerm_virtual_network.virtualNetwork1"
+                "[root] azurerm_subnet.subnet4" -> "[root] azurerm_virtual_network.virtualNetwork1"
+                "[root] azurerm_subnet.subnet5" -> "[root] azurerm_virtual_network.virtualNetwork1"
+                "[root] azurerm_subnet.subnet6" -> "[root] azurerm_virtual_network.virtualNetwork1"
+                "[root] azurerm_virtual_network.virtualNetwork1" -> "[root] azurerm_resource_group.RG1"
+                "[root] data.template_file.linux-mysql" -> "[root] provider.template"
+                "[root] data.template_file.linux-vm-cloud-init" -> "[root] provider.template"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_application_gateway.application-gateway"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_lb_backend_address_pool.lb4"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_lb_backend_address_pool.lb5"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_lb_probe.lb4"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_lb_probe.lb5"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_lb_rule.lb4"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_lb_rule.lb5"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.adds6"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.adds62"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.jumpbox"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.sql-linux-vm5"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.sql-linux-vm5-2"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm3"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm3-2"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm3-3"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm4"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm4-2"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm4-3"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link2"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link3"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link3-2"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link3-3"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link4"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link4-2"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link4-3"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link5"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link5-2"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link6"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_interface_security_group_association.link6-2"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_network_security_group.nsg1"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] azurerm_storage_account.storageAccount1"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] var.web-linux-delete-data-disks-on-termination"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] var.web-linux-delete-os-disk-on-termination"
+                "[root] meta.count-boundary (EachMode fixup)" -> "[root] var.web-linux-license-type"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_application_gateway.application-gateway"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_lb_backend_address_pool.lb4"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_lb_backend_address_pool.lb5"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_lb_probe.lb4"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_lb_probe.lb5"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_lb_rule.lb4"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_lb_rule.lb5"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.adds6"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.adds62"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.jumpbox"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.sql-linux-vm5"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.sql-linux-vm5-2"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm3"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm3-2"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm3-3"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm4"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm4-2"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_linux_virtual_machine.web-linux-vm4-3"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link2"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link3"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link3-2"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link3-3"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link4"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link4-2"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link4-3"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link5"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link5-2"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link6"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_interface_security_group_association.link6-2"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_network_security_group.nsg1"
+                "[root] provider.azurerm (close)" -> "[root] azurerm_storage_account.storageAccount1"
+                "[root] provider.azurerm" -> "[root] var.client_secret"
+                "[root] provider.template (close)" -> "[root] data.template_file.linux-mysql"
+                "[root] provider.template (close)" -> "[root] data.template_file.linux-vm-cloud-init"
+                "[root] root" -> "[root] meta.count-boundary (EachMode fixup)"
+                "[root] root" -> "[root] provider.azurerm (close)"
+                "[root] root" -> "[root] provider.template (close)"
+        }
+}

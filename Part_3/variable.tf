@@ -1,11 +1,21 @@
 
 
-variable "rgName" {
+variable "name-rg1" {
     type      = string
   description = "Ressource group name"
 }
 
-variable "region" {
+variable "name-rg2" {
+    type      = string
+  description = "Ressource group name"
+}
+
+variable "region-1" {
+    type      = string
+  description = "Location"
+}
+
+variable "region-2" {
     type      = string
   description = "Location"
 }
@@ -25,7 +35,12 @@ variable "admin_pass" {
   description = "Admin user account password"
 }
 
-variable "tag" {
+variable "tag-1" {
+    type      = string
+  description = "Tag to use for the infrastructure"
+}
+
+variable "tag-2" {
     type      = string
   description = "Tag to use for the infrastructure"
 }

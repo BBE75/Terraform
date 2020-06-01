@@ -5,7 +5,7 @@ resource "azurerm_network_security_group" "nsg1" {
     resource_group_name = azurerm_resource_group.RG1.name
     
     security_rule {
-        name                       = "HTTPS"
+        name                       = "HTTP"
         priority                   = 1000
         direction                  = "Inbound"
         access                     = "Allow"
@@ -66,7 +66,7 @@ resource "azurerm_network_security_group" "nsg3" {
         protocol                   = "*"
         source_port_range          = "*"
         destination_port_range     = "*"
-        source_address_prefix      = azurerm_subnet.subnet1.address_prefixes
+        source_address_prefix      = azurerm_subnet.subnet1.address_prefix
         destination_address_prefix = "*"
     }
 
@@ -78,7 +78,7 @@ resource "azurerm_network_security_group" "nsg3" {
         protocol                   = "*"
         source_port_range          = "*"
         destination_port_range     = "22"
-        source_address_prefix      = azurerm_subnet.subnet2.address_prefixes
+        source_address_prefix      = azurerm_subnet.subnet2.address_prefix
         destination_address_prefix = "*"
     }
 
@@ -102,7 +102,7 @@ resource "azurerm_network_security_group" "nsg4" {
         protocol                   = "*"
         source_port_range          = "*"
         destination_port_range     = "22"
-        source_address_prefix      = azurerm_subnet.subnet2.address_prefixes
+        source_address_prefix      = azurerm_subnet.subnet2.address_prefix
         destination_address_prefix = "*"
     }
 
@@ -114,7 +114,7 @@ resource "azurerm_network_security_group" "nsg4" {
         protocol                   = "*"
         source_port_range          = "*"
         destination_port_range     = "22"
-        source_address_prefix      = azurerm_subnet.subnet3.address_prefixes
+        source_address_prefix      = azurerm_subnet.subnet3.address_prefix
         destination_address_prefix = "*"
     }
 
@@ -137,7 +137,7 @@ resource "azurerm_network_security_group" "nsg5" {
         protocol                   = "*"
         source_port_range          = "*"
         destination_port_range     = "22"
-        source_address_prefix      = azurerm_subnet.subnet2.address_prefixes
+        source_address_prefix      = azurerm_subnet.subnet2.address_prefix
         destination_address_prefix = "*"
     }
 
@@ -149,7 +149,7 @@ resource "azurerm_network_security_group" "nsg5" {
         protocol                   = "*"
         source_port_range          = "*"
         destination_port_range     = "22"
-        source_address_prefix      = azurerm_subnet.subnet4.address_prefixes
+        source_address_prefix      = azurerm_subnet.subnet4.address_prefix
         destination_address_prefix = "*"
     }
 
@@ -158,7 +158,7 @@ resource "azurerm_network_security_group" "nsg5" {
     }
 }
 
-# Create Network Security Group and rule for SSH
+# Create Network Security Group and rule for SSH and open port for ad
 resource "azurerm_network_security_group" "nsg6" {
     name                = "nsg6"
     location            = azurerm_resource_group.RG1.location
@@ -172,19 +172,33 @@ resource "azurerm_network_security_group" "nsg6" {
         protocol                   = "*"
         source_port_range          = "*"
         destination_port_range     = "22"
-        source_address_prefix      = azurerm_subnet.subnet2.address_prefixes
+        source_address_prefix    = azurerm_subnet.subnet2.address_prefix
         destination_address_prefix = "*"
     }
 
     security_rule {
-        name                       = "All"
+        name                       = "RPC"
         priority                   = 1010
         direction                  = "Inbound"
         access                     = "Allow"
-        protocol                   = "*"
+        protocol                   = "Tcp"
         source_port_range          = "*"
-        destination_port_range     = "22"
-        source_address_prefix      = azurerm_subnet.subnet5.address_prefixes
+        destination_port_range     = "135"
+        source_address_prefixes      = [azurerm_subnet.subnet1.address_prefix, azurerm_subnet.subnet2.address_prefix, azurerm_subnet.subnet3.address_prefix, 
+                                        azurerm_subnet.subnet4.address_prefix, azurerm_subnet.subnet5.address_prefix]
+        destination_address_prefix = "*"
+    }
+
+    security_rule {
+        name                       = "Kerberos"
+        priority                   = 1011
+        direction                  = "Inbound"
+        access                     = "Allow"
+        protocol                   = "All"
+        source_port_range          = "*"
+        destination_port_range     = "88"
+        source_address_prefixes      = [azurerm_subnet.subnet1.address_prefix, azurerm_subnet.subnet2.address_prefix, azurerm_subnet.subnet3.address_prefix, 
+                                        azurerm_subnet.subnet4.address_prefix, azurerm_subnet.subnet5.address_prefix]
         destination_address_prefix = "*"
     }
 

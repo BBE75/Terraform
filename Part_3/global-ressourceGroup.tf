@@ -10,10 +10,19 @@ provider "azurerm" {
 }
 
 # Create a resource group
-resource "azurerm_resource_group" "RG1" {
-  name     = var.rgName
-  location = var.region
+resource "azurerm_resource_group" "rg1" {
+  name     = var.name-rg1
+  location = var.region-1
   tags = {
-        environment =  var.tag
+        environment =  var.tag-1
+    }
+}
+
+# Create a resource group
+resource "azurerm_resource_group" "rg2" {
+  name     = var.name-rg2
+  location = var.region-2
+  tags = {
+        environment =  var.tag-2
     }
 }
