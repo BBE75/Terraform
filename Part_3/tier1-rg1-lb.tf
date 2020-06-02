@@ -3,13 +3,11 @@ resource "azurerm_lb" "lb1-rg1" {
   name                = "lb1-rg1"
   location            = azurerm_resource_group.rg1.location
   resource_group_name = azurerm_resource_group.rg1.name
-  sku                 = "Standard"
+  sku                 = "Basic"
 
   frontend_ip_configuration {
-    name                          = "PrivateIPAddress"
-    subnet_id                     = azurerm_subnet.sb1-rg1.id
-    private_ip_address_allocation = "Static"
-    private_ip_address            = "192.168.1.100"
+    name                          = "Public"
+    public_ip_address_id          = azurerm_public_ip.lb1-rg1.id
   }
 }
 

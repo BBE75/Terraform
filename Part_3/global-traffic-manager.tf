@@ -5,7 +5,7 @@ resource "azurerm_traffic_manager_profile" "traffic_manager" {
   traffic_routing_method = "Weighted"
 
   dns_config {
-    relative_name = "Part_3"
+    relative_name = "esgi-ben-part3"
     ttl           = 100
   }
 
@@ -23,11 +23,20 @@ resource "azurerm_traffic_manager_profile" "traffic_manager" {
   }
 }
 
-resource "azurerm_traffic_manager_endpoint" "traffic_manager" {
-  name                = "traffic_manager"
+resource "azurerm_traffic_manager_endpoint" "traffic_manager_main" {
+  name                = "traffic_manager_main"
   resource_group_name = azurerm_resource_group.rg1.name
   profile_name        = azurerm_traffic_manager_profile.traffic_manager.name
-  target              = "esgi-ben-part3.westeurope.cloudapp.azure.com"
+  target              = "esgi-ben-part3-rg1.westeurope.cloudapp.azure.com"
   type                = "externalEndpoints"
   weight              = 100
+}
+
+resource "azurerm_traffic_manager_endpoint" "traffic_manager_second" {
+  name                = "traffic_manager_second"
+  resource_group_name = azurerm_resource_group.rg1.name
+  profile_name        = azurerm_traffic_manager_profile.traffic_manager.name
+  target              = "esgi-ben-part3-rg2.westeurope.cloudapp.azure.com"
+  type                = "externalEndpoints"
+  weight              = 150
 }
